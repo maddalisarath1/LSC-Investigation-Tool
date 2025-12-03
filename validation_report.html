@@ -1,0 +1,676 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>Salesforce Configuration Validation Report</title>
+            <style>
+                body { font-family: Arial, sans-serif; margin: 40px; }
+                h1 { color: #0066cc; }
+                h2 { color: #0066cc; margin-top: 30px; }
+                .summary { background-color: #f8f9fa; padding: 15px; border-radius: 5px; margin: 20px 0; }
+                .chart { text-align: center; margin: 30px 0; }
+                table { border-collapse: collapse; width: 100%; margin: 20px 0; }
+                th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+                th { background-color: #f2f2f2; }
+                tr:nth-child(even) { background-color: #f8f9fa; }
+                .critical { color: #ff4444; font-weight: bold; }
+                .high { color: #ff8800; font-weight: bold; }
+                .medium { color: #ffcc00; }
+                .low { color: #00cc44; }
+                .metadata { font-size: 12px; color: #666; margin-top: 40px; }
+                .badge { display: inline-block; padding: 3px 8px; border-radius: 3px; color: white; font-size: 12px; }
+                .badge-ai { background-color: #6f42c1; }
+                .badge-rule { background-color: #0066cc; }
+            </style>
+        </head>
+        <body>
+            <h1>Salesforce Configuration Validation Report</h1>
+            
+            <div class="summary">
+                <h2>Configuration Summary</h2>
+                <p>Configuration completeness: <strong>100.0%</strong></p>
+                <p>Total issues found: <strong>6</strong></p>
+                <ul>
+                    <li><span class="critical">Critical issues:</span> 0</li>
+                    <li><span class="high">High issues:</span> 4</li>
+                    <li><span class="medium">Medium issues:</span> 2</li>
+                    <li><span class="low">Low issues:</span> 0</li>
+                </ul>
+                <p>Validation method: <strong>Rule-based</strong></p>
+            </div>
+            
+            <div class="chart">
+                <h2>Issues by Severity</h2>
+                <img src="data:image/png;base64,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ypMnj6tTp05eyw0fPtws17VrV/e8YcOGmXlJJV2n534uXbo02fIXL15MNq9t27auG264wWtezZo1Xc2bN0+27LfffmvWrf+ry5cvu0qWLOmqVauW69KlS+7lFi1aZJYbOnSoe55+Hp03cuRIr3XWr1/f1bBhQ9e16P7oflkmTJhg1nfq1KkU36Pnged7fNH90mOWVNJj/vvvv7ty587teu2117yW27lzp/k5WvO3b99u3jdnzhxXeuln1PeOGzfOPS8hIcFVr149c5z1eKtly5aZ5ZYsWeL1/jp16vj8uSU9B6pWrWrer5/78ccfd3344YeuEydOJFu2VatWrtq1a7v+/vtv97zExERXkyZNXFWqVHHPi4mJceXNm9f1119/ee339ddf73riiSfc87p37+4qXbq06/Tp017beeihh1zh4eHu89M6z/S8THrOJj0HVYcOHXz+DDNznAD4P6pgAfALehdVFS5cOE3LL1682Pw/YMAAr/laEqKSthXRKku33367+7newdXShQMHDqR7X1etWmWqf2kJhCe9a55ZWm3HuuvsybMdiN411gbPzZs3N/uf1upBnrT6zcmTJ81n8KyX36FDB6lWrZrPtja9evXyeq7HMyPHzypZ+eqrr0wJTkrL6J3xH3/8UTJr/vz5ZjtaMqHHzZq0hKNKlSry7bffmuWsEg6tfnTx4sV0b0dLprTkyqJ3/fW5HmetmqVat25tqu1pOw6LNsLW0h2t/pYaPQe0BEirCFolWFoCodUV9dyzqh7+9ddfpg2Vft5z5865P++ff/5pzi2tZmZVs3vwwQdN43Y9Rpbly5ebEh99TWmJg5aaaGmfPvY8hro+Pf+2bdvmta9aopKZtkuZOU4A/B8BBIBfsOqv6wVTWmi9cW3Uqu1CPOlFpV686uueypcvn2wdWsVEq82kl7XupNvWuva6zswGEF+0epJelGlVGv18GqCsNhMZCSDWZ7CqeHnSAJL0+GlI0W3acfz0wlarB2lVKK0ipm0stBqQZxgZNGiQqYqjbXY0JGg1M88qWumhF9x64azr0c/gOWl1PQ0I1rHXQDtt2jTTHkYvridOnJjm46sXzPrz8XTTTTeZ/622PnrOavUhbVBuhRy9yNbjq72/XYuGJK36p+vTSdtL6c/wvffeM9WelFZn08+rVc6Sfl7twldZn7lu3brm563VnSz6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6tu3rzRv3lzGjRsnHTp0kNmzZ8uWLVtk6tSp2fxJAAAAAPh9ANFudU+dOiVDhw41Dcm1O92lS5e6G5rHxsaanrEsTZo0kVmzZsnLL78sL730klSpUsX0gFWrVq1s/BTILK0mp2PBJK0uB/gjzlcEEs5XBBLO1+Djl+OAAAAAAAhOftcGBAAAAEDwIoAAAAAAcAwBBAAAAIBjCCDINmvWrDEDP549ezbV5SpWrGh6QrNLixYtpF+/fratDznPjBkz0j120OOPPy6dOnXKsn0CMvK9m5FzGQAyiwACW2hvZX369JEbbrjB9FKhI5bec889ycZn8aS9lx07dsw9kE1Kfwh//PFHefLJJ7N0/4FrBQXPCzftqe+XX37Jlv1D8J9/ep716tUr2Wu9e/c2r+kyduFcRnbghgwIIMi033//3QweuXr1ahk7dqzs3LnTdJvcsmVL8wfTlytXrphBJ3W0ev2DmpoSJUpIwYIFs2jvgfQrUKCAlCxZMrt3A0FKb+DoeFaXLl1yz/v7779Nd/Ply5e3dVucywCyAwEEmfbMM8+YELF582a5//775aabbpKaNWuaASU3bdpkltHXJ02aJPfee69cd9118tprr3ndUdbHOtBkXFycmafT8OHDfVbB0uWfeuopMy5M/vz5zXgvixYtMq/9+eef0qVLFzNQpYaW2rVry+eff55NRwbByldp3auvvmou5AoXLiw9evSQwYMHmzGMknrzzTeldOnSUqxYMRPQNYwDnho0aGBCyPz5893z9LGGj/r167vnJSYmmgF5K1WqZIJE3bp1Ze7cuV7rWrx4sflO1tf1ppDeMErtXPZ1Z1qrrGrVVYs+1hJvnV+kSBHzXfzBBx+4BwzW34HKlSvLkiVLbD0uyBnWrl1rBqHW2hT6Xanfpf/88495Tf/W6/l69epV83zHjh3mekGXsej376OPPppt+4+0IYAgU/766y9T2qEXUhoskvL8w6aB4r777jMlJE888USy6lgaMsLCwky1LJ2ef/75ZOvTP7jt2rWT77//XmbOnCk///yzjB49WnLnzu2+S6ilMd98843s2rXLVN167LHHTDgCsspnn31mQvWYMWNk69at5kJRA3dS3377rfz222/m/48//thc/OkEJKXfkR999JH7+fTp083FvScNH5988olMnjxZdu/eLf379zcXXnoBpw4fPiyd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" alt="Issues by Severity Chart">
+            </div>
+            
+            <h2>Detailed Issues</h2>
+        
+            <h3 class="high">HIGH Issues (4)</h3>
+            <table>
+                <tr>
+                    <th>Object</th>
+                    <th>Record</th>
+                    <th>Field</th>
+                    <th>Issue</th>
+                    <th>Expected</th>
+                    <th>Actual</th>
+                    <th>Suggestion</th>
+                    <th>Impact</th>
+                </tr>
+            
+                <tr>
+                    <td>LifeSciDataChgDefMngFld</td>
+                    <td>A - Name</td>
+                    <td>IsDeleted</td>
+                    <td><span class="badge badge-rule">RULE</span> Required field IsDeleted is missing in A - Name</td>
+                    <td>False</td>
+                    <td>MISSING</td>
+                    <td>Add IsDeleted to A - Name</td>
+                    <td>Configuration may be incomplete</td>
+                </tr>
+                
+                <tr>
+                    <td>LifeSciDataChgDefMngFld</td>
+                    <td>A - Name</td>
+                    <td>IsDeleted</td>
+                    <td><span class="badge badge-rule">RULE</span> IsDeleted has wrong data type (string instead of number)</td>
+                    <td>Number: False</td>
+                    <td>String: </td>
+                    <td>Change IsDeleted to number type</td>
+                    <td>Field validation may fail</td>
+                </tr>
+                
+                <tr>
+                    <td>LifeSciStagePath</td>
+                    <td>Inquiry</td>
+                    <td>Parameters</td>
+                    <td><span class="badge badge-rule">RULE</span> Parameters has wrong data type (number instead of string)</td>
+                    <td>String: {}</td>
+                    <td>Number: 123</td>
+                    <td>Change Parameters to string type</td>
+                    <td>Field validation may fail</td>
+                </tr>
+                
+                <tr>
+                    <td>LifeScienceCustomScript</td>
+                    <td>ResponsePreferenceChecklist</td>
+                    <td>Type</td>
+                    <td><span class="badge badge-rule">RULE</span> Type contains incorrect placeholder value</td>
+                    <td>Checklist</td>
+                    <td>INCORRECT_VALUE</td>
+                    <td>Replace INCORRECT_VALUE with proper value for Type</td>
+                    <td>Configuration will not work as expected</td>
+                </tr>
+                </table>
+            <h3 class="medium">MEDIUM Issues (2)</h3>
+            <table>
+                <tr>
+                    <th>Object</th>
+                    <th>Record</th>
+                    <th>Field</th>
+                    <th>Issue</th>
+                    <th>Expected</th>
+                    <th>Actual</th>
+                    <th>Suggestion</th>
+                    <th>Impact</th>
+                </tr>
+            
+                <tr>
+                    <td>LifeSciEmailTmplRelaFrgmtFeed</td>
+                    <td>EmailTmplRelaFrgmt Feed Item</td>
+                    <td>UnexpectedField__c</td>
+                    <td><span class="badge badge-rule">RULE</span> Unexpected field UnexpectedField__c found in EmailTmplRelaFrgmt Feed Item</td>
+                    <td>Field should not exist</td>
+                    <td>This should not be here</td>
+                    <td>Remove UnexpectedField__c from EmailTmplRelaFrgmt Feed Item</td>
+                    <td>May cause data integrity issues</td>
+                </tr>
+                
+                <tr>
+                    <td>LifeScienceAccountListObject</td>
+                    <td>Sample</td>
+                    <td>UnexpectedField__c</td>
+                    <td><span class="badge badge-rule">RULE</span> Unexpected field UnexpectedField__c found in Sample</td>
+                    <td>Field should not exist</td>
+                    <td>This should not be here</td>
+                    <td>Remove UnexpectedField__c from Sample</td>
+                    <td>May cause data integrity issues</td>
+                </tr>
+                </table>
+            <h2>Configuration Completeness by Object</h2>
+            <table>
+                <tr>
+                    <th>Object</th>
+                    <th>Template Records</th>
+                    <th>Customer Records</th>
+                    <th>Completeness</th>
+                </tr>
+        
+                <tr>
+                    <td>LifeSciAccountListColumn</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeSciAccountListMember</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeSciAcctGrpAssignment</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeSciAcctGrpAssignmentFeed</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeSciAcctGrpAssignmentHistory</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeSciAcctGrpAssignmentShare</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeSciAcctListFilterCrit</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeSciCountry</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeSciDataChangeDef</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeSciDataChangeRequest</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeSciDataChangeRequestShare</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeSciDataChgDefMngFld</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeSciDataChgDefMngFldShare</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeSciDataChgDefRecType</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeSciDataChgPersonaDef</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeSciEmailTemplate</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeSciEmailTemplateFeed</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeSciEmailTemplateHistory</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeSciEmailTemplateShare</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeSciEmailTmplFragment</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeSciEmailTmplFragmentFeed</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeSciEmailTmplFragmentHistory</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeSciEmailTmplFragmentShare</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeSciEmailTmplRelaFrgmt</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeSciEmailTmplRelaFrgmtFeed</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeSciEmailTmplRelaFrgmtHistory</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeSciEmailTmplSnapshot</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeSciEmailTmplSnapshotFeed</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeSciEmailTmplSnapshotHistory</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeSciMarketableProduct</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeSciMarketableProductFeed</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeSciMarketableProductHistory</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeSciMarketableProductShare</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeSciMetadataAssignment</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeSciMetadataAssignmentFeed</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeSciMetadataAssignmentHistory</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeSciMetadataCategory</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeSciMetadataCategoryFeed</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeSciMetadataCategoryHistory</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeSciMetadataCategoryShare</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeSciMetadataFieldValue</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeSciMetadataFieldValueFeed</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeSciMetadataFieldValueHistory</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeSciMetadataRecord</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeSciMetadataRecordFeed</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeSciMetadataRecordHistory</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeSciMetadataRecordShare</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeSciMobileMetadataRecord</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeSciMobileMetadataRecordFeed</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeSciMobileMetadataRecordHistory</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeSciMobileMetadataRecordShare</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeSciProductAcctRstrc</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeSciProductAcctRstrcShare</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeSciStageAction</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeSciStageActionShare</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeSciStageObject</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeSciStageObjectShare</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeSciStageOperation</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeSciStageOperationAction</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeSciStageOperationCondn</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeSciStagePath</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeSciStageValue</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeScienceAccountList</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeScienceAccountListObject</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeScienceAccountListShare</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeScienceCustomScript</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeScienceCustomScriptShare</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeScienceEmail</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeScienceEmailFeed</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeScienceEmailHistory</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeScienceEmailShare</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeScienceMobileApp</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeScienceMobileAppFeed</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            
+                <tr>
+                    <td>LifeScienceMobileAppHistory</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td class="low">100%</td>
+                </tr>
+            </table>
+            <div class="metadata">
+                <p>Report generated: 2025-10-03 09:40:58</p>
+                <p>Data source: file</p>
+                <p>Validation method: Rule-based</p>
+                <p>Generated by Salesforce Configuration Validator</p>
+            </div>
+        </body>
+        </html>
+        

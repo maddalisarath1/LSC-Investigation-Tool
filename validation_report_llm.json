@@ -1,0 +1,564 @@
+{
+  "summary": {
+    "timestamp": "2025-10-03T09:47:14.021142",
+    "objects": {
+      "LifeSciAccountListColumn": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciAccountListMember": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciAcctGrpAssignment": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciAcctGrpAssignmentFeed": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciAcctGrpAssignmentHistory": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciAcctGrpAssignmentShare": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciAcctListFilterCrit": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciCountry": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciDataChangeDef": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciDataChangeRequest": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciDataChangeRequestShare": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciDataChgDefMngFld": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciDataChgDefMngFldShare": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciDataChgDefRecType": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciDataChgPersonaDef": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciEmailTemplate": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciEmailTemplateFeed": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciEmailTemplateHistory": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciEmailTemplateShare": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciEmailTmplFragment": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciEmailTmplFragmentFeed": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciEmailTmplFragmentHistory": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciEmailTmplFragmentShare": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciEmailTmplRelaFrgmt": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciEmailTmplRelaFrgmtFeed": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciEmailTmplRelaFrgmtHistory": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciEmailTmplSnapshot": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciEmailTmplSnapshotFeed": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciEmailTmplSnapshotHistory": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciMarketableProduct": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciMarketableProductFeed": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciMarketableProductHistory": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciMarketableProductShare": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciMetadataAssignment": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciMetadataAssignmentFeed": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciMetadataAssignmentHistory": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciMetadataCategory": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciMetadataCategoryFeed": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciMetadataCategoryHistory": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciMetadataCategoryShare": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciMetadataFieldValue": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciMetadataFieldValueFeed": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciMetadataFieldValueHistory": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciMetadataRecord": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciMetadataRecordFeed": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciMetadataRecordHistory": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciMetadataRecordShare": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciMobileMetadataRecord": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciMobileMetadataRecordFeed": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciMobileMetadataRecordHistory": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciMobileMetadataRecordShare": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciProductAcctRstrc": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciProductAcctRstrcShare": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciStageAction": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciStageActionShare": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciStageObject": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciStageObjectShare": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciStageOperation": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciStageOperationAction": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciStageOperationCondn": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciStagePath": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciStageValue": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeScienceAccountList": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeScienceAccountListObject": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeScienceAccountListShare": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeScienceCustomScript": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeScienceCustomScriptShare": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeScienceEmail": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeScienceEmailFeed": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeScienceEmailHistory": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeScienceEmailShare": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeScienceMobileApp": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeScienceMobileAppFeed": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeScienceMobileAppHistory": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      }
+    },
+    "overall_completeness": 100.0,
+    "total_template_records": 74,
+    "total_customer_records": 74,
+    "missing_objects": [],
+    "incomplete_objects": [],
+    "data_source": "file",
+    "extraction_timestamp": "2025-10-03T09:47:14.023516",
+    "validation_method": "AI-powered (anthropic)"
+  },
+  "validation_method": "AI-powered (anthropic)",
+  "issues": [
+    {
+      "object_name": "LifeSciEmailTmplFragmentHistory",
+      "record_id": "N/A (History Object)",
+      "field_name": "UnexpectedField__c",
+      "severity": "high",
+      "issue_type": "business_rule_violation",
+      "message": "History object contains unexpected custom field that is not in template",
+      "expected_value": "No custom fields ending with __c",
+      "actual_value": "UnexpectedField__c present",
+      "suggestion": "Remove the custom field 'UnexpectedField__c' from LifeSciEmailTmplFragmentHistory object",
+      "customer_impact": "May cause data integrity issues and conflicts with standard history tracking functionality",
+      "source": "llm"
+    },
+    {
+      "object_name": "LifeSciEmailTmplRelaFrgmtFeed",
+      "record_id": "EmailTmplRelaFrgmt Feed Item",
+      "field_name": "UnexpectedField__c",
+      "severity": "medium",
+      "issue_type": "business_rule_violation",
+      "message": "Feed object contains unexpected custom field that is not in template",
+      "expected_value": "No custom fields ending with __c",
+      "actual_value": "UnexpectedField__c present",
+      "suggestion": "Remove the custom field 'UnexpectedField__c' from LifeSciEmailTmplRelaFrgmtFeed object",
+      "customer_impact": "May interfere with Chatter feed functionality and cause display issues",
+      "source": "llm"
+    },
+    {
+      "object_name": "LifeSciEmailTmplRelaFrgmtHistory",
+      "record_id": "N/A (History Object)",
+      "field_name": "UnexpectedField__c",
+      "severity": "high",
+      "issue_type": "business_rule_violation",
+      "message": "History object contains unexpected custom field that is not in template",
+      "expected_value": "No custom fields ending with __c",
+      "actual_value": "UnexpectedField__c present",
+      "suggestion": "Remove the custom field 'UnexpectedField__c' from LifeSciEmailTmplRelaFrgmtHistory object",
+      "customer_impact": "May cause data integrity issues and conflicts with standard history tracking functionality",
+      "source": "llm"
+    },
+    {
+      "object_name": "LifeSciMarketableProductShare",
+      "record_id": "N/A (Share Object)",
+      "field_name": "UnexpectedField__c",
+      "severity": "critical",
+      "issue_type": "business_rule_violation",
+      "message": "Share object contains unexpected custom field that is not in template",
+      "expected_value": "No custom fields ending with __c",
+      "actual_value": "UnexpectedField__c present",
+      "suggestion": "Remove the custom field 'UnexpectedField__c' from LifeSciMarketableProductShare object",
+      "customer_impact": "May severely impact sharing rules and record-level security, potentially causing access control issues",
+      "source": "llm"
+    },
+    {
+      "object_name": "LifeSciMetadataRecordShare",
+      "record_id": "N/A (Share Object)",
+      "field_name": "IsDeleted",
+      "severity": "high",
+      "issue_type": "missing_field",
+      "message": "Required IsDeleted field is missing from Share object",
+      "expected_value": "false",
+      "actual_value": "Missing",
+      "suggestion": "Add IsDeleted field with value 'false' to LifeSciMetadataRecordShare record",
+      "customer_impact": "May cause issues with record deletion tracking and sharing record management",
+      "source": "llm"
+    },
+    {
+      "object_name": "LifeSciMobileMetadataRecordHistory",
+      "record_id": "N/A (History Object)",
+      "field_name": "UnexpectedField__c",
+      "severity": "high",
+      "issue_type": "business_rule_violation",
+      "message": "History object contains unexpected custom field that is not in template",
+      "expected_value": "No custom fields ending with __c",
+      "actual_value": "UnexpectedField__c present",
+      "suggestion": "Remove the custom field 'UnexpectedField__c' from LifeSciMobileMetadataRecordHistory object",
+      "customer_impact": "May cause data integrity issues and conflicts with standard history tracking functionality",
+      "source": "llm"
+    },
+    {
+      "object_name": "LifeSciProductAcctRstrcShare",
+      "record_id": "N/A (Share Object)",
+      "field_name": "IsDeleted",
+      "severity": "high",
+      "issue_type": "missing_field",
+      "message": "Required IsDeleted field is missing from Share object",
+      "expected_value": "false",
+      "actual_value": "Missing",
+      "suggestion": "Add IsDeleted field with value 'false' to LifeSciProductAcctRstrcShare record",
+      "customer_impact": "May cause issues with record deletion tracking and sharing record management",
+      "source": "llm"
+    },
+    {
+      "object_name": "LifeSciStagePath",
+      "record_id": "Inquiry",
+      "field_name": "Parameters",
+      "severity": "critical",
+      "issue_type": "invalid_value",
+      "message": "Parameters field must be a valid JSON string, not a number",
+      "expected_value": "{}",
+      "actual_value": "123",
+      "suggestion": "Change the Parameters field value from number 123 to a valid JSON string like '{}'",
+      "customer_impact": "Will cause stage path configuration failures and prevent workflow functionality from working correctly",
+      "source": "llm"
+    },
+    {
+      "object_name": "LifeScienceAccountListObject",
+      "record_id": "Sample",
+      "field_name": "UnexpectedField__c",
+      "severity": "high",
+      "issue_type": "business_rule_violation",
+      "message": "LifeSci object contains unexpected custom field that is not in template",
+      "expected_value": "No custom fields ending with __c",
+      "actual_value": "UnexpectedField__c present",
+      "suggestion": "Remove the custom field 'UnexpectedField__c' from LifeScienceAccountListObject record",
+      "customer_impact": "May cause data synchronization issues and unexpected behavior in account list functionality",
+      "source": "llm"
+    },
+    {
+      "object_name": "LifeScienceCustomScript",
+      "record_id": "ResponsePreferenceChecklist",
+      "field_name": "Type",
+      "severity": "critical",
+      "issue_type": "invalid_value",
+      "message": "Type field contains placeholder value 'INCORRECT_VALUE' instead of a valid type",
+      "expected_value": "Checklist",
+      "actual_value": "INCORRECT_VALUE",
+      "suggestion": "Change Type field value from 'INCORRECT_VALUE' to a valid type such as 'Checklist', 'Validation', etc.",
+      "customer_impact": "Custom script will not function correctly and may cause script execution failures",
+      "source": "llm"
+    },
+    {
+      "object_name": "LifeScienceEmailShare",
+      "record_id": "N/A (Share Object)",
+      "field_name": "UnexpectedField__c",
+      "severity": "critical",
+      "issue_type": "business_rule_violation",
+      "message": "Share object contains unexpected custom field that is not in template",
+      "expected_value": "No custom fields ending with __c",
+      "actual_value": "UnexpectedField__c present",
+      "suggestion": "Remove the custom field 'UnexpectedField__c' from LifeScienceEmailShare object",
+      "customer_impact": "May severely impact sharing rules and record-level security for email records, potentially causing access control issues",
+      "source": "llm"
+    },
+    {
+      "object_name": "LifeSciDataChgDefMngFld",
+      "record_id": "A - Name",
+      "field_name": "IsDeleted",
+      "severity": "medium",
+      "issue_type": "missing_field",
+      "message": "Required IsDeleted field is missing from record",
+      "expected_value": "false",
+      "actual_value": "Missing",
+      "suggestion": "Add IsDeleted field with value 'false' to the record",
+      "customer_impact": "May cause issues with record deletion tracking and data change definition management",
+      "source": "llm"
+    },
+    {
+      "object_name": "LifeSciMarketableProduct",
+      "record_id": "DIABETA 2.5MG",
+      "field_name": "ProductionCost",
+      "severity": "low",
+      "issue_type": "missing_field",
+      "message": "ProductionCost field present in template but missing from customer record",
+      "expected_value": "Empty string or numeric value",
+      "actual_value": "Missing",
+      "suggestion": "Add ProductionCost field to the LifeSciMarketableProduct record, even if empty",
+      "customer_impact": "May cause issues with product costing calculations if this field is used in business processes",
+      "source": "llm"
+    }
+  ],
+  "issue_counts": {
+    "total": 13,
+    "critical": 4,
+    "high": 6,
+    "medium": 2,
+    "low": 1
+  }
+}

@@ -1,0 +1,62 @@
+# LifeSci Data Integrity Rules
+All LifeSci objects must not contain unexpected custom fields (fields ending with __c that are not in template)
+Field data types must match template specifications (boolean values must be true/false, not strings)
+All required fields from template must be present in customer data
+Field values must not be set to "INCORRECT_VALUE" or similar placeholder text
+Numeric fields must contain numbers, not strings
+String fields must contain strings, not numbers
+
+# LifeSci Email Template Requirements
+LifeSciEmailTemplate must have IsActive set to true for production use
+LifeSciEmailTemplate SenderType must be valid (SalesRep, System, etc.)
+LifeSciEmailTemplate must not have placeholder values in critical fields
+LifeSciEmailTemplateHistory and Share objects must not contain unexpected fields
+
+# LifeSci Stage Management Rules
+LifeSciStageObject must have valid ObjectName matching Salesforce object API names
+LifeSciStagePath Parameters field must be a valid JSON string, not a number
+LifeSciStageValue FieldValue must match the stage Name for consistency
+LifeSciStageOperation must have Priority as a number
+LifeSciStageAction Type field must be valid (Component, FieldUpdate, etc.)
+
+# LifeSci Data Change Management
+LifeSciDataChangeDef must have IsActive set to true for active definitions
+LifeSciDataChangeRequest Status must be valid (Draft, Submitted, Approved, Rejected)
+LifeSciDataChgDefMngFld ValidationType must be either Internal or External
+LifeSciDataChangeRequest must have proper validation based on ValidationType
+
+# LifeSci Product Configuration
+LifeSciMarketableProduct must have IsActive set to true for active products
+LifeSciMarketableProduct DistributionMethod must be valid (DropAndShip, DirectShip, etc.)
+LifeSciMarketableProduct Type must be "Product" or "Kit"
+Product Share and History objects must not have unexpected custom fields
+
+# LifeSci Metadata Rules
+LifeSciMetadataRecord IsActive must be true for active configurations
+LifeSciMetadataCategory Type must be valid (Hierarchical, Flat, etc.)
+LifeSciMetadataAssignment AssignmentLevel must be valid (User, Profile, Permission Set)
+LifeSciMetadataFieldValue must not contain "Sample" as actual data
+
+# LifeSci Mobile App Rules
+LifeSciMobileMetadataRecord Status must be "Active" for production use
+LifeScienceMobileApp must have valid ApplicationVersion format
+Mobile sync flags (IsDownloadSyncSuccessful, IsUploadSyncSuccessful) must be boolean values
+Mobile History and Share objects must not contain unexpected fields
+
+# LifeSci Account List Requirements
+LifeScienceAccountList Type must be either "List" or "Route"
+LifeScienceAccountList with Type "Route" must have route-specific configurations
+LifeScienceAccountListObject must not have unexpected fields or "Sample" data in production
+Account List filter criteria must have valid OperatorType (equals, not_equals, contains, etc.)
+
+# LifeSci Custom Script Validation
+LifeScienceCustomScript Type must be valid (Checklist, Validation, etc.)
+LifeScienceCustomScript ComponentName must reference existing Lightning components
+Custom Script must not have "INCORRECT_VALUE" or placeholder text
+
+# Share and History Object Rules
+All Share objects must have valid AccessLevel (Read, Edit, All)
+All Share objects must have valid RowCause (Owner, Manual, Rule, Team, etc.)
+Share objects must not contain unexpected custom fields
+History objects must not contain unexpected custom fields
+IsDeleted field must be boolean (true/false), not missing or string value

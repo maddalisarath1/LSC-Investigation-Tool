@@ -1,0 +1,649 @@
+{
+  "LifeSciAccountListColumn": [
+    {
+      "IsDeleted": false,
+      "Name": "LSALC-000000022",
+      "CurrencyIsoCode": "USD",
+      "ColumnApiName": "LastProviderVisitDate",
+      "DisplayOrder": 1.0,
+      "SortOrderType": "",
+      "SourceSystemName": "",
+      "SourceSystemIdentifier": ""
+    }
+  ],
+  "LifeSciAccountListMember": [
+    {
+      "IsDeleted": false,
+      "Name": "LSALM-000000001",
+      "CurrencyIsoCode": "USD",
+      "ProviderVisitOffsetDay": "",
+      "DurationInMinutes": "",
+      "VisitStartTime": "",
+      "SourceSystemName": "",
+      "SourceSystemIdentifier": ""
+    }
+  ],
+  "LifeSciAcctGrpAssignment": [
+    {
+      "Name": "Account Group Assignment"
+    }
+  ],
+  "LifeSciAcctGrpAssignmentFeed": [
+    {
+      "Name": "AcctGrpAssignment Feed Item"
+    }
+  ],
+  "LifeSciAcctGrpAssignmentHistory": [
+    {}
+  ],
+  "LifeSciAcctGrpAssignmentShare": [
+    {}
+  ],
+  "LifeSciAcctListFilterCrit": [
+    {
+      "IsDeleted": false,
+      "Name": "LALFC-000000003",
+      "CurrencyIsoCode": "USD",
+      "ColumnApiName": "IsActive",
+      "ColumnDataType": "BOOLEAN",
+      "OperatorType": "equals",
+      "SequenceNumber": 1.0,
+      "ColumnValue": "true",
+      "SourceSystemName": "",
+      "SourceSystemIdentifier": ""
+    }
+  ],
+  "LifeSciCountry": [
+    {
+      "Name": "United States"
+    }
+  ],
+  "LifeSciDataChangeDef": [
+    {
+      "IsDeleted": false,
+      "DeveloperName": "Account",
+      "Language": "en_US",
+      "MasterLabel": "Account",
+      "IsActive": true,
+      "ObjectName": "Account"
+    }
+  ],
+  "LifeSciDataChangeRequest": [
+    {
+      "IsDeleted": false,
+      "Name": "DCR-000000001",
+      "CurrencyIsoCode": "USD",
+      "ValidationType": "Internal",
+      "ExternalValidationSysName": "",
+      "DataChangeInformation": "{\"newData\":{\"LastName\":\"Murph\",\"RecordTypeId\":\"012YH0000001RREYA2\",\"FirstName\":\"Shan\"},\"oldData\":{}}",
+      "OperationType": "Create",
+      "IsNewRecApprovalRequired": true,
+      "DataChangeRecordIdentifier": "001YH000000iM1dYAE",
+      "DataChgExtlRecIdentifier": "",
+      "Comments": "",
+      "ExtlValidationSysResponse": "",
+      "FailureReason": "",
+      "Status": "Approved",
+      "SourceSystemName": "",
+      "SourceSystemIdentifier": "",
+      "ExtlValidationReqIdentifier": ""
+    }
+  ],
+  "LifeSciDataChangeRequestShare": [
+    {
+      "AccessLevel": "All",
+      "RowCause": "Owner",
+      "IsDeleted": false
+    }
+  ],
+  "LifeSciDataChgDefMngFld": [
+    {
+      "Name": "A - Name",
+      "CurrencyIsoCode": "USD",
+      "FieldApiName": "Name",
+      "ShouldApplyChngImmediately": false,
+      "ValidationType": "External",
+      "SourceSystemName": "",
+      "SourceSystemIdentifier": ""
+    }
+  ],
+  "LifeSciDataChgDefMngFldShare": [
+    {
+      "AccessLevel": "All",
+      "RowCause": "Owner",
+      "IsDeleted": false
+    }
+  ],
+  "LifeSciDataChgDefRecType": [
+    {
+      "IsDeleted": false,
+      "RecordTypeId": "012YH0000001RRDYA2",
+      "ExternalValidationSysName": "Onekey",
+      "IsNewRecApprovalRequired": false,
+      "ValidationType": "External"
+    }
+  ],
+  "LifeSciDataChgPersonaDef": [
+    {
+      "IsDeleted": false,
+      "IsActive": true,
+      "ChangeUpdateType": "DoNotApplyChangesImmediately"
+    }
+  ],
+  "LifeSciEmailTemplate": [
+    {
+      "IsDeleted": false,
+      "Name": "Email with Attachments",
+      "CurrencyIsoCode": "USD",
+      "IsSubjectLineEditable": false,
+      "CanAttachiCalendarFile": false,
+      "BccEmailIdList": "",
+      "IsDefaultAutoEmailTemplate": false,
+      "Description": "",
+      "ShouldIgnoreEmailConsent": false,
+      "EmailInvitationContextType": "",
+      "EmailInvitationActionType": "",
+      "IsActive": true,
+      "HasSendConsentAcknowledgement": true,
+      "ReplyToType": "",
+      "ReplyToEmailAddress": "",
+      "SenderType": "SalesRep",
+      "SenderEmailFieldApiName": "",
+      "AttachmentObjectType": "",
+      "SourceSystemName": "",
+      "SourceSystemIdentifier": ""
+    }
+  ],
+  "LifeSciEmailTemplateFeed": [
+    {
+      "Name": "EmailTemplate Feed Item"
+    }
+  ],
+  "LifeSciEmailTemplateHistory": [
+    {
+      "IsDeleted": false
+    }
+  ],
+  "LifeSciEmailTemplateShare": [
+    {
+      "AccessLevel": "All",
+      "RowCause": "Owner",
+      "IsDeleted": false
+    }
+  ],
+  "LifeSciEmailTmplFragment": [
+    {
+      "IsDeleted": false,
+      "Name": "Aspirin for Headache",
+      "CurrencyIsoCode": "USD",
+      "Description": "Aspirin for Headache",
+      "SourceSystemName": "",
+      "SourceSystemIdentifier": ""
+    }
+  ],
+  "LifeSciEmailTmplFragmentFeed": [
+    {
+      "Name": "EmailTmplFragment Feed Item"
+    }
+  ],
+  "LifeSciEmailTmplFragmentHistory": [
+    {
+      "IsDeleted": false,
+      "UnexpectedField__c": "This should not be here"
+    }
+  ],
+  "LifeSciEmailTmplFragmentShare": [
+    {
+      "AccessLevel": "All",
+      "RowCause": "Owner",
+      "IsDeleted": false
+    }
+  ],
+  "LifeSciEmailTmplRelaFrgmt": [
+    {
+      "IsDeleted": false,
+      "Name": "LSETRF-000000001",
+      "CurrencyIsoCode": "USD",
+      "SourceSystemName": "",
+      "SourceSystemIdentifier": ""
+    }
+  ],
+  "LifeSciEmailTmplRelaFrgmtFeed": [
+    {
+      "Name": "EmailTmplRelaFrgmt Feed Item",
+      "UnexpectedField__c": "This should not be here"
+    }
+  ],
+  "LifeSciEmailTmplRelaFrgmtHistory": [
+    {
+      "IsDeleted": false,
+      "UnexpectedField__c": "This should not be here"
+    }
+  ],
+  "LifeSciEmailTmplSnapshot": [
+    {
+      "IsDeleted": false,
+      "Name": "ETV-00000001",
+      "CurrencyIsoCode": "USD",
+      "FileIdentifier": "TestEmailwithonlyAttachments.zip",
+      "FileName": "TestEmail with only Attachments",
+      "EmailBody": "",
+      "CalendarFileDescription": "",
+      "VersionNumber": 1,
+      "Status": "Active",
+      "EmailSubject": "Email with Attachments",
+      "Language": "",
+      "SourceSystemName": "",
+      "SourceSystemIdentifier": ""
+    }
+  ],
+  "LifeSciEmailTmplSnapshotFeed": [
+    {
+      "Name": "EmailTmplSnapshot Feed Item"
+    }
+  ],
+  "LifeSciEmailTmplSnapshotHistory": [
+    {
+      "IsDeleted": false
+    }
+  ],
+  "LifeSciMarketableProduct": [
+    {
+      "IsDeleted": false,
+      "Name": "DIABETA 2.5MG",
+      "CurrencyIsoCode": "USD",
+      "Type": "Product",
+      "IsCompetitorProduct": false,
+      "BoxQuantityInner": "",
+      "BoxQuantityOuter": "",
+      "IsAvlForSamplingAllocation": false,
+      "IsMsgReqdForProvVisit": false,
+      "MaxSampleOrderQuantity": "",
+      "MinSampleOrderQuantity": "",
+      "NationalDrugCode": "",
+      "SignatureRequirementLevel": "",
+      "SortOrder": "",
+      "StateDstrLicenseCategory": "",
+      "TherapeuticArea": "",
+      "TherapeuticClass": "",
+      "SourceSystemIdentifier": "",
+      "SourceSystem": "",
+      "Description": "",
+      "IsActive": true,
+      "Manufacturer": "",
+      "ProductCode": "DB001",
+      "ProductMetadata": "",
+      "IsControlledSubstance": false,
+      "DistributionMethod": "DropAndShip",
+      "DefaultDistributionQuantity": ""
+    }
+  ],
+  "LifeSciMarketableProductFeed": [
+    {
+      "Name": "MarketableProduct Feed Item"
+    }
+  ],
+  "LifeSciMarketableProductHistory": [
+    {
+      "IsDeleted": false
+    }
+  ],
+  "LifeSciMarketableProductShare": [
+    {
+      "AccessLevel": "All",
+      "RowCause": "Owner",
+      "IsDeleted": false,
+      "UnexpectedField__c": "This should not be here"
+    }
+  ],
+  "LifeSciMetadataAssignment": [
+    {
+      "IsDeleted": false,
+      "Name": "CustomerFacingColleague_00eYH0000002gMf",
+      "CurrencyIsoCode": "USD",
+      "AssignmentApiName": "EmailSettings_EmailSettings_00eYH0000002gMfYAI_CustomerFacingColleague_00eYH0000002gMf",
+      "AssignmentLevel": "Profile"
+    }
+  ],
+  "LifeSciMetadataAssignmentFeed": [
+    {
+      "Name": "MetadataAssignment Feed Item"
+    }
+  ],
+  "LifeSciMetadataAssignmentHistory": [
+    {
+      "IsDeleted": false
+    }
+  ],
+  "LifeSciMetadataCategory": [
+    {
+      "IsDeleted": false,
+      "Name": "ProviderVisitSettings",
+      "CurrencyIsoCode": "USD",
+      "Category": "ProviderVisitSettings",
+      "CategoryLabel": "Provider Visit Settings",
+      "Type": "Hierarchical"
+    }
+  ],
+  "LifeSciMetadataCategoryFeed": [
+    {
+      "Name": "MetadataCategory Feed Item"
+    }
+  ],
+  "LifeSciMetadataCategoryHistory": [
+    {
+      "IsDeleted": false
+    }
+  ],
+  "LifeSciMetadataCategoryShare": [
+    {
+      "AccessLevel": "All",
+      "RowCause": "Owner",
+      "IsDeleted": false
+    }
+  ],
+  "LifeSciMetadataFieldValue": [
+    {
+      "Name": "Sample"
+    }
+  ],
+  "LifeSciMetadataFieldValueFeed": [
+    {
+      "Name": "MetadataFieldValue Feed Item"
+    }
+  ],
+  "LifeSciMetadataFieldValueHistory": [
+    {
+      "IsDeleted": false
+    }
+  ],
+  "LifeSciMetadataRecord": [
+    {
+      "IsDeleted": false,
+      "Name": "EmailSettings_OrgLevel",
+      "CurrencyIsoCode": "USD",
+      "RecordApiName": "EmailSettings_EmailSettings_OrgLevel",
+      "Type": "",
+      "IsOrgLevel": true,
+      "IsActive": true
+    }
+  ],
+  "LifeSciMetadataRecordFeed": [
+    {
+      "Name": "MetadataRecord Feed Item"
+    }
+  ],
+  "LifeSciMetadataRecordHistory": [
+    {
+      "IsDeleted": false
+    }
+  ],
+  "LifeSciMetadataRecordShare": [
+    {
+      "AccessLevel": "All",
+      "RowCause": "Owner"
+    }
+  ],
+  "LifeSciMobileMetadataRecord": [
+    {
+      "IsDeleted": false,
+      "Name": "LSMMR-00000004",
+      "CurrencyIsoCode": "USD",
+      "ErrorLog": "",
+      "ApplicationVersionName": "",
+      "ApplicationVersionNumber": "",
+      "Status": "Active",
+      "IntegrationErrorCode": "",
+      "IntegrationErrorMessage": "",
+      "IntegrationStatus": "New",
+      "SourceSystemIdentifier": "",
+      "SourceSystemName": ""
+    }
+  ],
+  "LifeSciMobileMetadataRecordFeed": [
+    {
+      "Name": "MobileMetadataRecord Feed Item"
+    }
+  ],
+  "LifeSciMobileMetadataRecordHistory": [
+    {
+      "IsDeleted": false,
+      "UnexpectedField__c": "This should not be here"
+    }
+  ],
+  "LifeSciMobileMetadataRecordShare": [
+    {
+      "AccessLevel": "All",
+      "RowCause": "Owner",
+      "IsDeleted": false
+    }
+  ],
+  "LifeSciProductAcctRstrc": [
+    {
+      "Name": "Sample"
+    }
+  ],
+  "LifeSciProductAcctRstrcShare": [
+    {
+      "AccessLevel": "All",
+      "RowCause": "Owner"
+    }
+  ],
+  "LifeSciStageAction": [
+    {
+      "IsDeleted": false,
+      "Name": "Add Response",
+      "CurrencyIsoCode": "USD",
+      "Label": "Respond",
+      "FieldApiName": "",
+      "FieldValue": "",
+      "Parameters": "{\"componentConfiguration\":{\"name\":\"lsc4ce:inquiryAnswerModal\",\"asynchronousValidation\":false}}",
+      "SourceSystemName": "",
+      "SourceSystemIdentifier": "LifeSciStageActionRef1",
+      "Type": "Component"
+    }
+  ],
+  "LifeSciStageActionShare": [
+    {
+      "AccessLevel": "All",
+      "RowCause": "Owner",
+      "IsDeleted": false
+    }
+  ],
+  "LifeSciStageObject": [
+    {
+      "IsDeleted": false,
+      "Name": "Inquiry",
+      "CurrencyIsoCode": "USD",
+      "IsControlledByStagePath": true,
+      "ObjectName": "Inquiry",
+      "ParentObjRelaFieldName": "",
+      "SourceSystemName": "",
+      "SourceSystemIdentifier": "LifeSciStageObjectRef1"
+    }
+  ],
+  "LifeSciStageObjectShare": [
+    {
+      "AccessLevel": "All",
+      "RowCause": "Owner",
+      "IsDeleted": false
+    }
+  ],
+  "LifeSciStageOperation": [
+    {
+      "IsDeleted": false,
+      "Name": "Inq Creator Draft stage",
+      "CurrencyIsoCode": "USD",
+      "CompoundRelationshipName": "",
+      "CanCreate": true,
+      "CanEdit": true,
+      "CanDelete": true,
+      "Priority": 1,
+      "Type": "WorkflowPath",
+      "SourceSystemName": "",
+      "SourceSystemIdentifier": "LifeSciStageOperationRef1"
+    }
+  ],
+  "LifeSciStageOperationAction": [
+    {
+      "IsDeleted": false,
+      "Name": "MI Add Response Preference",
+      "CurrencyIsoCode": "USD",
+      "DisplayOrder": 1.0,
+      "SourceSystemIdentifier": "LifeSciStageOperationActionRef1",
+      "SourceSystemName": ""
+    }
+  ],
+  "LifeSciStageOperationCondn": [
+    {
+      "IsDeleted": false,
+      "Name": "LifeSciStageOperationCondnRef1",
+      "CurrencyIsoCode": "USD",
+      "ObjectFieldName": "Inq_IsCreatorOrResponder__c",
+      "ObjectFieldValue": "Creator",
+      "Operator": "Equals",
+      "SourceSystemName": "",
+      "SourceSystemIdentifier": "LifeSciStageOperationCondnRef1"
+    }
+  ],
+  "LifeSciStagePath": [
+    {
+      "IsDeleted": false,
+      "Name": "Inquiry",
+      "CurrencyIsoCode": "USD",
+      "FieldApiName": "Status",
+      "Status": "Inactive",
+      "SourceSystemName": "",
+      "SourceSystemIdentifier": "LifeSciStagePathRef1",
+      "Parameters": 123
+    }
+  ],
+  "LifeSciStageValue": [
+    {
+      "IsDeleted": false,
+      "Name": "Draft",
+      "CurrencyIsoCode": "USD",
+      "FieldValue": "Draft",
+      "SourceSystemIdentifier": "LifeSciStageValueRef1",
+      "SourceSystemName": ""
+    }
+  ],
+  "LifeScienceAccountList": [
+    {
+      "IsDeleted": false,
+      "Name": "test List",
+      "CurrencyIsoCode": "USD",
+      "Type": "List",
+      "IsRoute": false,
+      "IsMultiDayRoute": false,
+      "CurrentTimeZone": "",
+      "ReportIdentifier": "",
+      "SourceSystemName": "",
+      "SourceSystemIdentifier": ""
+    }
+  ],
+  "LifeScienceAccountListObject": [
+    {
+      "Name": "Sample",
+      "UnexpectedField__c": "This should not be here"
+    }
+  ],
+  "LifeScienceAccountListShare": [
+    {
+      "AccessLevel": "All",
+      "RowCause": "Owner",
+      "IsDeleted": false
+    }
+  ],
+  "LifeScienceCustomScript": [
+    {
+      "IsDeleted": false,
+      "Name": "ResponsePreferenceChecklist",
+      "CurrencyIsoCode": "USD",
+      "ComponentName": "gwInquiryValidationScript",
+      "Type": "INCORRECT_VALUE",
+      "OperationEventType": "",
+      "ObjectName": "",
+      "SourceSystemName": "",
+      "SourceSystemIdentifier": "LifeScienceCustomScriptRef1"
+    }
+  ],
+  "LifeScienceCustomScriptShare": [
+    {
+      "AccessLevel": "All",
+      "RowCause": "Owner",
+      "IsDeleted": false
+    }
+  ],
+  "LifeScienceEmail": [
+    {
+      "IsDeleted": false,
+      "Name": "ET-00000001",
+      "CurrencyIsoCode": "USD",
+      "EmailLanguage": "",
+      "AttachmentIdentifiers": "068YH00000021WIYAY, 068YH00000021WHYAY",
+      "CcEmailAddressList": "",
+      "IsConsentIgnored": false,
+      "SubjectText": "Aspirin Email",
+      "BccEmailAddressList": "",
+      "BodyAttachmentIdentifier": "00PYH00000009052AA",
+      "SenderUserName": "Admin User",
+      "BouncedReason": "",
+      "IsBounced": false,
+      "ErrorMessage": "",
+      "AttachmentNames": "Aspirin Details.pdf;required__Aspirin benifits.pdf;",
+      "ResponseStatus": "",
+      "IsHtmlBody": true,
+      "FailedAttemptCount": 0.0,
+      "UrgencyType": "Immediate",
+      "FromUserEmailAddress": "pooja.gupta@salesforce.com",
+      "SentToEmailAddress": "aaron.morita@cumuluspharma.com",
+      "SenderEmailAddress": "pooja.gupta@salesforce.com",
+      "Status": "Success",
+      "SourceSystemName": "",
+      "SourceSystemIdentifier": ""
+    }
+  ],
+  "LifeScienceEmailFeed": [
+    {
+      "Name": "enceEmail Feed Item"
+    }
+  ],
+  "LifeScienceEmailHistory": [
+    {
+      "IsDeleted": false
+    }
+  ],
+  "LifeScienceEmailShare": [
+    {
+      "AccessLevel": "All",
+      "RowCause": "Owner",
+      "IsDeleted": false,
+      "UnexpectedField__c": "This should not be here"
+    }
+  ],
+  "LifeScienceMobileApp": [
+    {
+      "IsDeleted": false,
+      "Name": "LSMA-000000001",
+      "CurrencyIsoCode": "USD",
+      "ApplicationVersion": "256.7.2 (10015)",
+      "IsFullSyncEnforced": false,
+      "DeviceLastLatitude": 12.934722544074306,
+      "DeviceLastLongitude": 77.69450662469386,
+      "DeviceMetadataVersion": "LSMMR-00000566",
+      "IsDownloadSyncSuccessful": true,
+      "IsUploadSyncSuccessful": false
+    }
+  ],
+  "LifeScienceMobileAppFeed": [
+    {
+      "Name": "enceMobileApp Feed Item"
+    }
+  ],
+  "LifeScienceMobileAppHistory": [
+    {
+      "IsDeleted": false
+    }
+  ]
+}

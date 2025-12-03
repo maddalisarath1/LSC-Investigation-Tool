@@ -1,0 +1,473 @@
+{
+  "summary": {
+    "timestamp": "2025-10-03T09:40:58.779817",
+    "objects": {
+      "LifeSciAccountListColumn": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciAccountListMember": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciAcctGrpAssignment": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciAcctGrpAssignmentFeed": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciAcctGrpAssignmentHistory": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciAcctGrpAssignmentShare": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciAcctListFilterCrit": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciCountry": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciDataChangeDef": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciDataChangeRequest": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciDataChangeRequestShare": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciDataChgDefMngFld": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciDataChgDefMngFldShare": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciDataChgDefRecType": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciDataChgPersonaDef": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciEmailTemplate": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciEmailTemplateFeed": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciEmailTemplateHistory": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciEmailTemplateShare": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciEmailTmplFragment": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciEmailTmplFragmentFeed": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciEmailTmplFragmentHistory": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciEmailTmplFragmentShare": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciEmailTmplRelaFrgmt": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciEmailTmplRelaFrgmtFeed": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciEmailTmplRelaFrgmtHistory": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciEmailTmplSnapshot": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciEmailTmplSnapshotFeed": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciEmailTmplSnapshotHistory": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciMarketableProduct": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciMarketableProductFeed": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciMarketableProductHistory": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciMarketableProductShare": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciMetadataAssignment": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciMetadataAssignmentFeed": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciMetadataAssignmentHistory": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciMetadataCategory": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciMetadataCategoryFeed": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciMetadataCategoryHistory": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciMetadataCategoryShare": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciMetadataFieldValue": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciMetadataFieldValueFeed": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciMetadataFieldValueHistory": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciMetadataRecord": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciMetadataRecordFeed": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciMetadataRecordHistory": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciMetadataRecordShare": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciMobileMetadataRecord": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciMobileMetadataRecordFeed": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciMobileMetadataRecordHistory": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciMobileMetadataRecordShare": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciProductAcctRstrc": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciProductAcctRstrcShare": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciStageAction": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciStageActionShare": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciStageObject": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciStageObjectShare": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciStageOperation": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciStageOperationAction": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciStageOperationCondn": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciStagePath": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeSciStageValue": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeScienceAccountList": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeScienceAccountListObject": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeScienceAccountListShare": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeScienceCustomScript": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeScienceCustomScriptShare": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeScienceEmail": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeScienceEmailFeed": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeScienceEmailHistory": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeScienceEmailShare": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeScienceMobileApp": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeScienceMobileAppFeed": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      },
+      "LifeScienceMobileAppHistory": {
+        "template_count": 1,
+        "customer_count": 1,
+        "completeness": 100
+      }
+    },
+    "overall_completeness": 100.0,
+    "total_template_records": 74,
+    "total_customer_records": 74,
+    "missing_objects": [],
+    "incomplete_objects": [],
+    "data_source": "file",
+    "extraction_timestamp": "2025-10-03T09:40:58.779874",
+    "validation_method": "Rule-based"
+  },
+  "validation_method": "Rule-based",
+  "issues": [
+    {
+      "object_name": "LifeSciDataChgDefMngFld",
+      "record_id": "A - Name",
+      "field_name": "IsDeleted",
+      "severity": "high",
+      "issue_type": "missing_field",
+      "message": "Required field IsDeleted is missing in A - Name",
+      "expected_value": "False",
+      "actual_value": "MISSING",
+      "suggestion": "Add IsDeleted to A - Name",
+      "customer_impact": "Configuration may be incomplete",
+      "source": "rule"
+    },
+    {
+      "object_name": "LifeSciDataChgDefMngFld",
+      "record_id": "A - Name",
+      "field_name": "IsDeleted",
+      "severity": "high",
+      "issue_type": "invalid_value",
+      "message": "IsDeleted has wrong data type (string instead of number)",
+      "expected_value": "Number: False",
+      "actual_value": "String: ",
+      "suggestion": "Change IsDeleted to number type",
+      "customer_impact": "Field validation may fail",
+      "source": "rule"
+    },
+    {
+      "object_name": "LifeSciEmailTmplRelaFrgmtFeed",
+      "record_id": "EmailTmplRelaFrgmt Feed Item",
+      "field_name": "UnexpectedField__c",
+      "severity": "medium",
+      "issue_type": "invalid_value",
+      "message": "Unexpected field UnexpectedField__c found in EmailTmplRelaFrgmt Feed Item",
+      "expected_value": "Field should not exist",
+      "actual_value": "This should not be here",
+      "suggestion": "Remove UnexpectedField__c from EmailTmplRelaFrgmt Feed Item",
+      "customer_impact": "May cause data integrity issues",
+      "source": "rule"
+    },
+    {
+      "object_name": "LifeSciStagePath",
+      "record_id": "Inquiry",
+      "field_name": "Parameters",
+      "severity": "high",
+      "issue_type": "invalid_value",
+      "message": "Parameters has wrong data type (number instead of string)",
+      "expected_value": "String: {}",
+      "actual_value": "Number: 123",
+      "suggestion": "Change Parameters to string type",
+      "customer_impact": "Field validation may fail",
+      "source": "rule"
+    },
+    {
+      "object_name": "LifeScienceAccountListObject",
+      "record_id": "Sample",
+      "field_name": "UnexpectedField__c",
+      "severity": "medium",
+      "issue_type": "invalid_value",
+      "message": "Unexpected field UnexpectedField__c found in Sample",
+      "expected_value": "Field should not exist",
+      "actual_value": "This should not be here",
+      "suggestion": "Remove UnexpectedField__c from Sample",
+      "customer_impact": "May cause data integrity issues",
+      "source": "rule"
+    },
+    {
+      "object_name": "LifeScienceCustomScript",
+      "record_id": "ResponsePreferenceChecklist",
+      "field_name": "Type",
+      "severity": "high",
+      "issue_type": "invalid_value",
+      "message": "Type contains incorrect placeholder value",
+      "expected_value": "Checklist",
+      "actual_value": "INCORRECT_VALUE",
+      "suggestion": "Replace INCORRECT_VALUE with proper value for Type",
+      "customer_impact": "Configuration will not work as expected",
+      "source": "rule"
+    }
+  ],
+  "issue_counts": {
+    "total": 6,
+    "critical": 0,
+    "high": 4,
+    "medium": 2,
+    "low": 0
+  }
+}
